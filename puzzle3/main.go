@@ -26,6 +26,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer file.Close()
 
 	trapStatus := false
 	id_sum := 0
